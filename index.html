@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>周易命理阁 · 八字排盘 / 称骨 / 小六壬 / 观音灵签</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="seal">易</div>
+      <h1 id="site-title" data-i18n="site_title">周易命理阁</h1>
+      <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
+    </div>
+    <p class="subtitle" id="site-sub" data-i18n="subtitle">八字排盘 · 称骨算命 · 小六壬 · 观音灵签 · 数字能量 · 生肖纳音 · 风水故事</p>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="shengchen" data-i18n="tab_shengchen">生辰综合</button>
+    <button class="tab-btn" data-tab="guanyin" data-i18n="tab_guanyin">观音灵签</button>
+    <button class="tab-btn" data-tab="num" data-i18n="tab_num">数字能量</button>
+    <button class="tab-btn" data-tab="shengxiao" data-i18n="tab_shengxiao">生肖纳音</button>
+    <button class="tab-btn" data-tab="fengshui" data-i18n="tab_fengshui">风水故事</button>
+  </nav>
+
+  <main>
+    <!-- 生辰综合 -->
+    <section id="shengchen" class="tab-panel active">
+      <div class="card">
+        <h2 data-i18n="sc_title">生辰测算（公历）</h2>
+        <p class="hint" data-i18n="sc_hint">一次输入，同时排出八字、称骨重量、小六壬、大运与流年。</p>
+        <div class="form-row">
+          <label><span data-i18n="lbl_year">年</span><input type="number" id="sc-y" placeholder="1990" min="1900" max="2100"></label>
+          <label><span data-i18n="lbl_month">月</span><input type="number" id="sc-m" placeholder="1-12" min="1" max="12"></label>
+          <label><span data-i18n="lbl_day">日</span><input type="number" id="sc-d" placeholder="1-31" min="1" max="31"></label>
+          <label><span data-i18n="lbl_hour">时</span><select id="sc-h">
+            <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+            <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+            <option value="6">6</option><option value="7">7</option><option value="8">8</option>
+            <option value="9">9</option><option value="10">10</option><option value="11">11</option>
+            <option value="12">12</option><option value="13">13</option><option value="14">14</option>
+            <option value="15">15</option><option value="16">16</option><option value="17">17</option>
+            <option value="18">18</option><option value="19">19</option><option value="20">20</option>
+            <option value="21">21</option><option value="22">22</option><option value="23">23</option>
+          </select></label>
+          <label><span data-i18n="lbl_min">分</span><input type="number" id="sc-mm" placeholder="0" min="0" max="59" value="0"></label>
+        </div>
+        <div class="gender-row">
+          <span class="gender-label" data-i18n="lbl_gender">性别</span>
+          <label class="gender-opt"><input type="radio" name="sc-gender" value="男" checked> <span data-i18n="gender_male">男</span></label>
+          <label class="gender-opt"><input type="radio" name="sc-gender" value="女"> <span data-i18n="gender_female">女</span></label>
+        </div>
+        <button id="sc-btn" class="btn-primary" data-i18n="btn_calc">开始测算</button>
+        <p id="sc-err" class="err"></p>
+        <p id="sc-lunar" class="lunar-text"></p>
+      </div>
+
+      <div class="card"><h3 data-i18n="sec_bazi">一、八字排盘</h3><div id="sc-bazi"></div></div>
+      <div class="card"><h3 data-i18n="sec_chengu">二、称骨算命（袁天罡）</h3><div id="sc-cg"></div></div>
+      <div class="card"><h3 data-i18n="sec_xl">三、小六壬</h3><div id="sc-xl"></div></div>
+      <div class="card"><h3 data-i18n="sec_dayun">四、大运（十年一步）</h3><div id="sc-dy"></div></div>
+      <div class="card"><h3 data-i18n="sec_liunian">五、流年运势</h3><div id="sc-ln"></div></div>
+    </section>
+
+    <!-- 观音灵签 -->
+    <section id="guanyin" class="tab-panel">
+      <div class="card center">
+        <h2 data-i18n="gy_title">观音灵签</h2>
+        <p class="hint" data-i18n="gy_hint">心念所求，诚心抽签。</p>
+        <button id="gy-btn" class="btn-primary btn-large" data-i18n="gy_btn">🙏 求签</button>
+        <div id="gy-result" class="gy-container"></div>
+      </div>
+    </section>
+
+    <!-- 数字能量 -->
+    <section id="num" class="tab-panel">
+      <div class="card">
+        <h2 data-i18n="num_title">数字能量 · 手机号吉凶</h2>
+        <p class="hint" data-i18n="num_hint">输入手机号，按相邻两位组合（八星）解读。</p>
+        <div class="form-row">
+          <label class="wide"><span data-i18n="num_label">号码</span><input type="text" id="num-in" placeholder="13800138000" maxlength="20"></label>
+        </div>
+        <button id="num-btn" class="btn-primary" data-i18n="num_btn">测算</button>
+        <div id="num-result"></div>
+      </div>
+    </section>
+
+    <!-- 生肖纳音 -->
+    <section id="shengxiao" class="tab-panel">
+      <div class="card">
+        <h2 data-i18n="sx_title">生肖纳音查询</h2>
+        <p class="hint" data-i18n="sx_hint">输入出生年份，查生肖、五行与纳音（以立春为界）。</p>
+        <div class="form-row">
+          <label><span data-i18n="sx_year">年</span><input type="number" id="sx-y" placeholder="1990" min="1900" max="2100"></label>
+        </div>
+        <button id="sx-btn" class="btn-primary" data-i18n="sx_btn">查询</button>
+        <div id="sx-result"></div>
+      </div>
+    </section>
+
+    <!-- 风水故事 -->
+    <section id="fengshui" class="tab-panel">
+      <div class="card">
+        <h2 data-i18n="fs_title">风水故事 · 民俗拾遗</h2>
+        <p class="hint" data-i18n="fs_hint">闲读几则传统风水小故事，茶余饭后，权作消遣与思考。</p>
+        <div id="fs-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p id="footer-text" data-i18n="footer">⚠️ 本网站所有测算均为中国传统民俗文化娱乐参考，<b>不含任何科学或医疗、投资、决策建议</b>。命运在己，诸事理性，切勿迷信。</p>
+    <p class="contact-line">📱 关注 / 合作微信：<span id="wx-id">（把这里改成你的微信号）</span></p>
+  </footer>
+
+  <!-- 会员付费弹窗 -->
+  <div id="pay-modal" class="pay-modal">
+    <div class="pay-box">
+      <button id="pay-close" class="pay-close" type="button">✕</button>
+      <h3 id="pay-title" data-i18n="pay_title">解锁会员深度解析</h3>
+      <label class="pay-label"><span data-i18n="pay_phone_ph">请输入手机号</span>
+        <input id="pay-phone" type="tel" inputmode="numeric" maxlength="11" placeholder="138xxxx8888">
+      </label>
+      <div class="pay-tiers">
+        <span class="pay-tiers-label" data-i18n="pay_tier_label">选择档位</span>
+        <label><input type="radio" name="pay-tier" value="single"> <span data-i18n="tier_single">单篇深度解析解锁</span> · ¥6.6</label>
+        <label><input type="radio" name="pay-tier" value="month"> <span data-i18n="tier_month">月度会员</span> · ¥39</label>
+        <label><input type="radio" name="pay-tier" value="year"> <span data-i18n="tier_year">年度会员</span> · ¥299</label>
+      </div>
+      <p class="pay-amount"><span data-i18n="pay_amount_label">应付</span>：<b id="pay-amount">¥6.6</b></p>
+      <div id="pay-qr" class="pay-qr"></div>
+      <p id="pay-tip" class="pay-tip"></p>
+      <p id="pay-err" class="pay-err"></p>
+      <button id="pay-submit" class="unlock-btn pay-submit" type="button" data-i18n="pay_submit">去支付</button>
+    </div>
+  </div>
+
+  <script src="lib/lunar.js"></script>
+  <script src="data.js"></script>
+  <script src="guanyin.js"></script>
+  <script src="guanyin_en.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

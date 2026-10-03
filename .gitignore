@@ -1,0 +1,11 @@
+# 后端（Node 服务，GitHub Pages 跑不了，route C 已关付费）
+backend/
+
+# 开发/自测脚本
+test.js
+test2.js
+test3.js
+test_frontend.js
+
+# 工作区内部分配目录
+.workbuddy/
