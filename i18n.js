@@ -92,9 +92,9 @@ const I18N = {
     sx_chong: '六冲',
     sx_muted: '生肖以农历立春为界；纳音按六十甲子循环，同一生肖每 60 年纳音不同。',
 
-    fs_title: '风水故事 · 民俗拾遗',
-    fs_hint: '闲读几则传统风水小故事，茶余饭后，权作消遣与思考。',
-    fs_cta1: '想看自己的八字命盘？',
+    fs_title: '风水故事 · 招财民间谈',
+    fs_hint: '几则老辈传下的招财风水小故事，读着有趣——发财终究靠自己手脚勤快、待人诚实。',
+    fs_cta1: '想看看自己的财运走势？',
     fs_cta2: '查查你的生肖纳音？',
     fs_cta3: '摇一签观音灵签？',
 
@@ -213,9 +213,9 @@ const I18N = {
     sx_chong: 'Clash',
     sx_muted: 'Zodiac follows the lunar Li Chun boundary; na yin cycles the 60 stems, so the same animal differs every 60 years.',
 
-    fs_title: 'Feng Shui Tales · Folklore',
-    fs_hint: 'A few traditional feng shui vignettes — light reading for thought and amusement.',
-    fs_cta1: 'Want your own Bazi chart?',
+    fs_title: 'Feng Shui Tales · On Wealth',
+    fs_hint: 'A few old-time wealth feng shui vignettes — fun to read. Getting rich, in the end, comes from your own diligence and honesty.',
+    fs_cta1: 'Curious about your own wealth trend?',
     fs_cta2: 'Check your zodiac na yin?',
     fs_cta3: 'Draw a Guanyin lot?',
 

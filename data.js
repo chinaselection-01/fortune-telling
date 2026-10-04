@@ -348,23 +348,27 @@ const XLRC_INTERP = {
 /* ---------- 风水故事（双语，用于引流/阅读） ---------- */
 const FENGSHUI_STORIES = [
   {
-    zh: { title: '门对门，谁先富', body: '老街两户人家门对门。东家信风水，把门槛垫高三分，说“水压一头，财不外流”；西家笑他迷信。十年后东家做小买卖发了财，西家却屡遭磕碰。风水先生路过一笑：“门垫三分是借口，真正压人的，是东家天天早起扫门前的那股勤。”' },
-    en: { title: 'Door to Door, Who Prospers First', body: 'Two houses on an old street faced each other. The east family believed in feng shui and raised their threshold three fen, saying “hold the head high, keep wealth in.” The west family laughed. Ten years on, the east family’s small business thrived while the west kept stumbling. A feng shui master passed by and smiled: “The threshold was an excuse; what truly pressed down was the east family’s habit of sweeping the doorstep at dawn — diligence.”' }
+    zh: { title: '财位摆对了，买卖旺三年', body: '老街有家杂货铺，掌柜听风水先生说“进门斜对角是明财位”，便把那处收拾得干干净净、摆了盏长明灯，日日擦拭。说来也怪，客人进门先看见亮堂堂的角落，脚步就慢了、多挑了两样。三年后铺子扩成了两间。先生后来点破：“财位不是风水宝地，是你最舍得花心思、最肯打理的那块地方——你把它照亮，客人和财气才愿意留下。”' },
+    en: { title: 'The Wealth Corner That Built a Shop', body: 'On an old street, a grocer heard a master say “the diagonal across from the door is the bright wealth corner.” He cleared it, lit a lamp that burned through the night, and wiped it daily. Strangely, customers slowed at the bright corner and picked up an extra item or two; in three years the shop grew to two. The master later revealed: “The wealth corner is no magic spot — it is the place you most willingly tend. Light it up, and customers and fortune will stay.”' }
   },
   {
-    zh: { title: '镜子不对床', body: '老辈人常说“镜子不对床，夜半不心慌”。有人嫌麻烦，把大镜正对睡床，结果总睡不踏实、梦多易惊。后来把镜子转了向、用布遮了，竟一夜安睡。是镜子有灵，还是心安则眠？风水之学，多半先安的是人心。' },
-    en: { title: 'No Mirror Facing the Bed', body: 'Elders say “a mirror must not face the bed, or the heart races at midnight.” One person, finding it troublesome, set a large mirror opposite the bed and slept fitfully with many dreams. After turning the mirror away and covering it, they slept through the night. Is the mirror spirit, or does calm come from a calm mind? Feng shui, more often than not, soothes the heart first.' }
+    zh: { title: '进门三见，见财见喜', body: '老辈人讲究“进门三见”：见红（一抹喜气）、见绿（一株生气）、见画（几分雅致）；最忌见灶（火气冲门）、见厕（污秽迎人）、见镜直冲（财气散掉）。有户人家把玄关堆满鞋和杂物，回家一进门就烦，日子也过得磕绊。后来腾出玄关、挂了幅小画、养了盆绿萝，全家气色都好了。风水先生笑：“进门第一眼，定的是一整天的运气——你先把门面给自己顺了，财气才进得来。”' },
+    en: { title: 'Three Things to See at the Door', body: 'Elders teach “three seeings at the door”: see red (a touch of joy), see green (a breath of life), see a picture (a bit of grace); never see the stove (fire at the gate), the toilet (filth to greet), or a mirror straight on (fortune scatters). One home buried its entry in shoes and clutter; everyone walked in annoyed and life stumbled. After clearing the entry, hanging a small picture and keeping a pothos, the whole family brightened. The master smiled: “The first sight at the door sets a whole day’s luck — tidy your own front first, then fortune can enter.”' }
   },
   {
-    zh: { title: '明堂容万马', body: '老宅前有片空地，称作“明堂”。明堂开阔，人便觉得胸襟也开阔，客人来了也舒服。后来空地被堆满杂物，家里人气也淡了。不是地气变了，是“留白”没了。居家风水，常是给自己留一处能喘气的空。' },
-    en: { title: 'The Bright Court Holds Ten Thousand Horses', body: 'An old home had an open space in front, called the “bright court.” With it open, people felt open-hearted and guests at ease. When the space filled with clutter, the household’s warmth faded. The earth-energy had not changed; the “emptiness” was gone. Home feng shui is often just leaving yourself room to breathe.' }
+    zh: { title: '活水引财，死水漏财', body: '“水主财”这句老话害过不少人：有人把鱼缸、喷泉摆得满屋都是，水浑了也不换，屋里又潮又闷，家人接连感冒。风水先生摇头：“水要活、要净、要摆在明处，死水一潭才是漏财。”他劝人把水景挪到通风亮堂处、勤换水，屋里清爽了，精神也回来了。老话没错——水主财，但“活”才生财；生意上的钱也一样，流转起来才是财，压在手里就成了一潭死水。' },
+    en: { title: 'Living Water Brings Wealth, Stagnant Water Leaks It', body: '“Water governs wealth” has misled many: one filled the house with fish tanks and fountains, never changing the murky water, and the damp, stuffy home bred constant colds. The master shook his head: “Water must be living, clean and in the light; a stagnant pool is what leaks wealth.” He moved the feature to a breezy bright spot and changed the water often; the home cleared and spirits returned. The old saying holds — water governs wealth, but only living water generates it. So does money in business: it multiplies in flow, and stalls as a dead pool when hoarded.' }
   },
   {
-    zh: { title: '一棵发财树', body: '有人图吉利，在店铺摆了盆“发财树”，天天浇水盼发财，生意却不见起色。隔壁铺子没摆树，却把门口扫得锃亮、对客笑脸相迎，生意红火。树是引子，人是根本——风水招的是“心思”，不是“运气”本身。' },
-    en: { title: 'A Money Tree', body: 'Someone placed a “money tree” in the shop for luck, watering it daily and waiting to get rich, yet business stayed flat. The next shop had no tree, but kept its doorstep spotless and greeted customers with a smile — and thrived. The tree is a trigger; the person is the root. Feng shui invites intention, not luck itself.' }
+    zh: { title: '一盆发财树，种的是念想', body: '有人图吉利，在店里摆了盆“发财树”，天天浇水盼订单，生意却半死不活。对门铺子没摆树，却把门口扫得锃亮、对客笑脸相迎、答应过的事件件有着落，反倒越做越红火。他不服，去问风水先生。先生指了指对门的招牌：“树是引子，人是根本。你天天盼树替你发财，不如先让自己配得上发财——勤快、守信、脸上有笑，这就是最好的招财局。”' },
+    en: { title: 'A Money Tree Planted with Hope', body: 'Someone placed a “money tree” in the shop for luck, watering it daily and waiting for orders, yet business dragged. Across the way, the rival had no tree but kept the doorstep spotless, greeted customers with a smile, and honored every promise — and thrived. Unconvinced, he asked a master, who pointed at the rival’s sign: “The tree is a trigger, the person is the root. Stop hoping the tree makes you rich; first become worthy of it — diligent, trustworthy, smiling. That is the finest wealth array.”' }
   },
   {
-    zh: { title: '水往哪里流', body: '老话讲“水主财”，于是有人把鱼缸、喷泉摆得满屋都是，反倒潮湿阴冷、家人易病。风水先生摇头：“水要活、要净、要摆在明处，不是越多越好。”凡事过犹不及，旺财的从来是“顺势”，不是“堆砌”。' },
-    en: { title: 'Where the Water Flows', body: 'An old saying goes “water governs wealth,” so one filled the house with fish tanks and fountains — only to breed damp cold and frequent illness. The master shook his head: “Water must be living, clean and placed in the light, not piled up.” Excess is as bad as lack; what brings fortune is following the flow, not the clutter.' }
+    zh: { title: '厨房是家里的财库', body: '老话讲“厨房干净，衣食不愁”。有对小夫妻懒得收拾灶台，油垢结了厚厚一层，吃饭将就、钱也留不住，常为琐事拌嘴。后来听劝把厨房收拾利索、按时开火做饭，家里有了烟火气，话也软了，攒钱竟顺了起来。风水先生说：“财库不在保险柜，在日子的节律里。你把灶台擦亮、把三餐过稳，财气自然留得住。”' },
+    en: { title: 'The Kitchen Is the Home’s Treasury', body: 'An old saying goes “a clean kitchen means no want for food and clothes.” A young couple let grease pile on the stove, ate carelessly and saved nothing, bickering over trifles. Heeding advice, they cleaned the kitchen and cooked on time; the home regained warmth, words softened, and saving became easy. The master said: “The treasury is not the safe but the rhythm of daily life. Wipe the stove bright and steady your three meals, and fortune stays.”' }
+  },
+  {
+    zh: { title: '先旺人气，再旺财气', body: '街角两家铺面，一家把门口堆满纸箱货品，路人瞥一眼就走；另一家门前敞亮、不堆杂物、招牌端正暖光，路人愿意停下看看。几年下来，敞亮那家盘下了隔壁的空铺。风水先生路过：“商铺风水，先有人气后有财气。你把门面留给了杂物，财气自然绕道走；把地方让给客人，生意自己就来了。”' },
+    en: { title: 'Popularity First, Then Prosperity', body: 'Two shops on a corner: one blocked its door with boxes, and passers-by glanced and left; the other kept a bright, uncluttered front with a neat, warm-lit sign, and people stopped. Years later the open one leased the empty shop next door. A master passing by said: “Shop feng shui: popularity first, then prosperity. Give your front to clutter and fortune detours; give it to customers and business comes on its own.”' }
   }
 ];
