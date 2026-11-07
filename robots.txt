@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chinaselection-01.github.io/fortune-telling/sitemap.xml
